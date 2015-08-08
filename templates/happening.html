@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Status</h2>
+<div class="jumbo-happening">
+    <IMG STYLE="position:relative; TOP:{{arrowtop}}px; LEFT:{{arrowleft}}px; WIDTH:50px; HEIGHT:50px" SRC={{url_for('static',filename="redarrow.png") }}>
+    <form action="" method="post" id="form2">
+        <button class="button1" type="submit" name="offset" value="9" form="form2" formaction="" style="color:white;background-color:black;">IT'S OVER<br>
+        <button class="button1" type="submit" name="offset" value="8" form="form2" formaction="" style="color:white;background-color:#CC3300;">IT'S HAPPENING<br>
+        <button class="button1" type="submit" name="offset" value="7" form="form2" formaction="" style="color:black;background-color:#FF0000;">IT'S TOO LATE<br>
+        <button class="button1" type="submit" name="offset" value="6" form="form2" formaction="" style="color:black;background-color:#FF6600;">YOU CAN'T STOP IT<br>
+        <button class="button1" type="submit" name="offset" value="5" form="form2" formaction="" style="color:black;background-color:#FF9933;">YOU ASKED FOR THIS<br>
+        <button class="button1" type="submit" name="offset" value="4" form="form2" formaction="" style="color:black;background-color:#FFBB16;">YOU COULD HAVE PREVENTED THIS<br>
+        <button class="button1" type="submit" name="offset" value="3" form="form2" formaction="" style="color:black;background-color:#FFFF00;">WHY DIDN'T YOU LISTEN?<br>
+        <button class="button1" type="submit" name="offset" value="2" form="form2" formaction="" style="color:black;background-color:#0066CC;">YOU DIDN'T LISTEN<br>
+        <button class="button1" type="submit" name="offset" value="1" form="form2" formaction="" style="color:black;background-color:#66CCFF;">IT BEGINS
+        <button class="button1" type="submit" name="offset" value="0" form="form2" formaction="" style="color:black;background-color:#99FF00;">IT HASN'T EVEN BEGUN<br>
+    </form>
+</div>
+<div class="jumbo">
+    <p><a href="/"/>Back to index</p>
+
+</div>
+
+{% endblock %}
