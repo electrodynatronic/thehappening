@@ -21,7 +21,7 @@ def the_happening():
     try:
         if request.form['offset'] is not None:
             top-=int(request.form['offset'])*28
-    except Exception:
+    except Exception:      # This has an odor.
         print Exception
     left=450
     return render_template('happening.html', arrowtop=top, arrowleft=left, title="WTF is Happening?")
